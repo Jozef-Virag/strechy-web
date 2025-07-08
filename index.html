@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Imrex - Opravy a izolácie plochých striech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Imrex</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Domov</a></li>
+
+        <!-- Služby -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sluzbyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Služby</a>
+          <ul class="dropdown-menu" aria-labelledby="sluzbyDropdown">
+            <li><a class="dropdown-item" href="#">Asfaltové pásy na strechy</a></li>
+            <li><a class="dropdown-item" href="#">PVC fólie na strechy</a></li>
+            <li><a class="dropdown-item" href="#">Zateplená strecha</a></li>
+            <li><a class="dropdown-item" href="#">Zelená strecha</a></li>
+            <li><a class="dropdown-item" href="#">Pochôdzna strecha</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Hydroizolácia asfaltovými pásmi</a></li>
+            <li><a class="dropdown-item" href="#">Hydroizolácia PVC fóliami</a></li>
+            <li><a class="dropdown-item" href="#">Tepelná izolácia</a></li>
+            <li><a class="dropdown-item" href="#">Spádovanie – Polystyrénbetón</a></li>
+            <li><a class="dropdown-item" href="#">Antiradónová izolácia</a></li>
+            <li><a class="dropdown-item" href="#">Doplnkové služby</a></li>
+          </ul>
+        </li>
+
+        <!-- O nás -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="imrexDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">O nás</a>
+          <ul class="dropdown-menu" aria-labelledby="imrexDropdown">
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-1-1/O-spolocnosti">O spoločnosti</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-1-2/System-prace">Systém práce</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-1-3/10-dovodov-preco-Imrex">10 dôvodov prečo Imrex</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-1-302/Zaujem-o-pracu">Záujem o prácu</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-1-23/3D-prehliadka-firmy">3D prehliadka firmy</a></li>
+          </ul>
+        </li>
+
+        <!-- Poradňa / Blog -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="poradnaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Poradňa</a>
+          <ul class="dropdown-menu" aria-labelledby="poradnaDropdown">
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-1-18/Caka-vas-oprava-alebo-rekonstrukcia-strechy">Čaká vás oprava alebo rekonštrukcia?</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-1-19/Rekonstrukcia-stresneho-plasta-krok-za-krokom">Rekonštrukcia krok za krokom</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-1-20/Preco-vznikaju-poruchy-na-streche">Prečo vznikajú poruchy?</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-1-21/Ake-poruchy-na-vas-cihaju">Aké poruchy na vás číhajú?</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-500-303/Blog">Blog</a></li>
+          </ul>
+        </li>
+
+        <!-- Realizácie -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="realizacieDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Realizácie</a>
+          <ul class="dropdown-menu" aria-labelledby="realizacieDropdown">
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-100-27/Cennik">Cenník</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-20-26/Realizovali-sme">Realizovali sme</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-200-29/Referencie">Referencie</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-30-28/Galeria">Galéria</a></li>
+            <li><a class="dropdown-item" href="https://www.imrex.sk/zar-50-300/Video">Video</a></li>
+          </ul>
+        </li>
+
+        <!-- Kontakt -->
+        <li class="nav-item"><a class="nav-link" href="https://www.imrex.sk/zar-40-25/Kontakty">Kontakty</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="heroCarousel" class="carousel slide hero" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/roof1.jpg" class="d-block w-100 hero-img" alt="Strecha 1">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/roof2.jpg" class="d-block w-100 hero-img" alt="Strecha 2">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/roof3.jpg" class="d-block w-100 hero-img" alt="Strecha 3">
+    </div>
+  </div>
+  <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+    <h1 class="mb-4 fw-semibold">Opravy a izolácie plochých striech</h1>
+    <p class="lead">
+      Špecializujeme sa na ploché strechy, ich opravy, rekonštrukcie a izolácie. Zaručujeme kvalitu, ktorá vydrží roky.
+    </p>
+    <a href="#contact" class="btn btn-light btn-lg fw-semibold shadow mt-3 ctabutton">Získať bezplatnú konzultáciu</a>
+  </div>
+</div>
+
+<section class="section-padding mt-5 pt-lg-5 bg-light" id="services">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="fw-bold mb-4">Prečo si vybrať Imrex?</h2>
+        <p class="lead mb-0">
+          Používame výlučne certifikované materiály najvyššej kvality, čo nám umožňuje poskytovať dlhodobé záruky. Kombinácia dlhoročných skúseností, osvedčených postupov a prvotriednych materiálov zaručuje, že vaša plochá strecha vydrží roky s minimálnou údržbou.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-1 shadow-sm rounded-4">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <div class="text-primary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                <i class="bi bi-search fs-3" style="color: #0194d7"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold mb-2">Bezplatná konzultácia</h5>
+            <p class="text-muted small mb-0">
+              Pred začatím práce vykonáme bezplatnú obhliadku, či ide o opravu alebo novú strechu.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-1 shadow-sm rounded-4">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <div class="text-primary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                <i class="bi bi-lightbulb fs-3" style="color: #0194d7"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold mb-2">Návrh riešenia</h5>
+            <p class="text-muted small mb-0">
+              Na základe výsledkov obhliadky odporučíme ideálne technológie pre vašu strechu.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-1 shadow-sm rounded-4">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+              <div class="text-primary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                <i class="bi bi-tools fs-3" style="color: #0194d7"></i>
+              </div>
+            </div>
+            <h5 class="fw-bold mb-2">Profesionálna realizácia</h5>
+            <p class="text-muted small mb-0">
+              Práce realizujú vyškolení odborníci zaručujúci kvalitu a dôraz na detail.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="bg-white rounded-4 shadow-sm p-4">
+          <h5 class="fw-bold mb-3" style="color: #0194d7">Zaujala vás naša ponuka?</h5>
+          <p class="mb-1">
+            Kontaktujte nás e-mailom na <a href="mailto:imrex@imrex.sk" class="text-decoration-none fw-semibold" style="color: #0194d7">imrex@imrex.sk</a><br>
+            alebo telefonicky na <a href="tel:0903801690" class="text-decoration-none fw-semibold" style="color: #0194d7">0903 801 690</a>.
+          </p>
+          <p class="mt-2 mb-0 text-muted">Radi vás navštívime a pripravíme riešenie šité na mieru.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-white zakaznici" id="referencie">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="fw-bold mb-3">Naši zákazníci</h2>
+        <p class="text-light">
+          Od rodinných domov, garáží, cez bytové domy až po veľké spoločnosti. Naša práca je viditeľná naprieč celým Slovenskom.
+        </p>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">S-BAU SK, s.r.o.</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Geox Shoe Factory Holding s.r.o.</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Slovak Telekom</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">ENVIRAL</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Zbor väzenskej a justičnej stráže</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Agroma s.r.o.</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Slovenská pošta</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Lesy SR</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Wenta Plus s.r.o.</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">GEOX topánky</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">EUROVIA</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Nemocnica Bojnice</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Pivovar TOPVAR</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">LEVITEX</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">SPP</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Strabag</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">VÚB</div></div>
+      <div class="col"><div class="p-3 bg-white text-dark fw-normal rounded">Senspol s.r.o.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section py-5" style="background: #fff;">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-7 text-center">
+        <h2 class="fw-bold mb-2" style="color: #0194d7;">Vypočítajte si cenu plochej strechy ihneď</h2>
+        <p class="lead mb-1">Kalkulácia plochej strechy <span class="fw-bold" style="color: #0194d7;">ZADARMO</span></p>
+        <p class="mb-2">Až <span class="fw-bold" style="color: #0194d7;">10 rokov záruka</span> na hydroizoláciu plochej strechy!</p>
+        <p class="text-muted small mb-0">Prvá diagnostika a obhliadka strechy <span class="fw-bold" style="color: #0194d7;">ZADARMO</span>.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <div class="calculator-card mx-auto shadow">
+          <div class="calculator-header d-flex align-items-center mb-4">
+            <i class="bi bi-calculator fs-2 me-2"></i>
+            <span class="fw-bold fs-5">Kalkulácia plochej strechy</span>
+          </div>
+          <form class="calculator-form">
+            <div class="mb-3">
+              <label for="area" class="form-label fw-semibold">Zadajte plochu strechy (m²)</label>
+              <input type="number" class="form-control" id="area" name="area" min="1" placeholder="Napr. 120" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Mám záujem o:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="interest" id="hydro" value="hydroizolacia" required>
+                <label class="form-check-label" for="hydro">Hydroizoláciu</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="interest" id="zateplenie" value="zateplenie">
+                <label class="form-check-label" for="zateplenie">Zateplenie strechy a hydroizoláciu</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Váš e-mail</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="vas@email.sk" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label fw-semibold">Telefón (nepovinné)</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="0903 123 456">
+            </div>
+            <button type="submit" class="btn ctabutton w-100 fw-bold">Získať kalkuláciu ZADARMO</button>
+          </form>
+          <div class="calculator-footer mt-4 text-center small text-muted">
+            <span>Až <span class="fw-bold" style="color:#0194d7;">10 rokov záruka</span> na hydroizoláciu! Prvá diagnostika <span class="fw-bold" style="color:#0194d7;">ZADARMO</span>.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-blue styled-footer pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row gy-5 align-items-start">
+      <!-- Contact -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="footer-title mb-3">Imrex Holding s.r.o.</h5>
+        <address class="footer-address mb-3">
+          Podjazdová 2628/9<br>
+          971 01 Prievidza
+        </address>
+        <div class="footer-contact mb-2">
+          <i class="bi bi-telephone-fill me-2"></i>
+          <a href="tel:+421903801690" class="footer-link">+421 903 801 690</a>
+        </div>
+        <div class="footer-contact mb-2">
+          <i class="bi bi-telephone-fill me-2"></i>
+          <a href="tel:+421917801690" class="footer-link">+421 917 801 690</a>
+        </div>
+        <div class="footer-contact">
+          <i class="bi bi-envelope-fill me-2"></i>
+          <a href="mailto:imrex@imrex.sk" class="footer-link">imrex@imrex.sk</a>
+        </div>
+      </div>
+      <!-- Navigation -->
+      <div class="col-lg-5 col-md-6">
+        <h5 class="footer-title mb-3">Navigácia</h5>
+        <div class="row">
+          <ul class="list-unstyled col-6 mb-0">
+            <li><a href="https://www.imrex.sk/zar-40-25/Kontakty" class="footer-link">Kontakty</a></li>
+            <li><a href="https://www.imrex.sk" class="footer-link">Imrex</a></li>
+            <li><a href="https://www.imrex.sk/zar-1-1/O-spolocnosti" class="footer-link">O spoločnosti</a></li>
+            <li><a href="https://www.imrex.sk/zar-1-302/Zaujem-o-pracu" class="footer-link">Záujem o prácu</a></li>
+            <li><a href="https://www.imrex.sk/zar-1-2/System-prace" class="footer-link">Systém práce</a></li>
+            <li><a href="https://www.imrex.sk/zar-1-3/10-dovodov-preco-Imrex" class="footer-link">10 dôvodov prečo Imrex</a></li>
+            <li><a href="https://www.imrex.sk/zar-1-18/Caka-vas-oprava-alebo-rekonstrukcia-strechy" class="footer-link">Oprava/rekonštrukcia strechy</a></li>
+            <li><a href="https://www.imrex.sk/zar-1-19/Rekonstrukcia-stresneho-plasta-krok-za-krokom" class="footer-link">Rekonštrukcia krok za krokom</a></li>
+            <li><a href="https://www.imrex.sk/zar-1-20/Preco-vznikaju-poruchy-na-streche" class="footer-link">Prečo vznikajú poruchy?</a></li>
+            <li><a href="https://www.imrex.sk/zar-1-21/Ake-poruchy-na-vas-cihaju" class="footer-link">Aké poruchy na vás číhajú?</a></li>
+            <li><a href="https://www.imrex.sk/zar-1-23/3D-prehliadka-firmy" class="footer-link">3D prehliadka firmy</a></li>
+            <li><a href="#" class="footer-link">Aplikácie</a></li>
+          </ul>
+          <ul class="list-unstyled col-6 mb-0">
+            <li><a href="https://www.imrex.sk/zar-2-5/Asfaltove-pasy-na-strechy" class="footer-link">Asfaltové pásy</a></li>
+            <li><a href="https://www.imrex.sk/zar-2-6/PVC-folie-na-strechy" class="footer-link">PVC fólie</a></li>
+            <li><a href="https://www.imrex.sk/zar-2-7/Zateplena-strecha" class="footer-link">Zateplená strecha</a></li>
+            <li><a href="https://www.imrex.sk/zar-2-9/Zelena-strecha" class="footer-link">Zelená strecha</a></li>
+            <li><a href="https://www.imrex.sk/zar-2-10/Pochodzna-strecha" class="footer-link">Pochôdzna strecha</a></li>
+            <li><a href="#" class="footer-link">Hydroizolácia striech</a></li>
+            <li><a href="https://www.imrex.sk/zar-3-11/Hydroizolacia-plochych-striech-asfaltovymi-pasmi" class="footer-link">Hydroizolácia asfaltovými pásmi</a></li>
+            <li><a href="https://www.imrex.sk/zar-3-12/Hydroizolacia-plochych-striech-PVC-foliami" class="footer-link">Hydroizolácia PVC fóliami</a></li>
+            <li><a href="https://www.imrex.sk/zar-3-13/Tepelna-izolacia-plochych-striech" class="footer-link">Tepelná izolácia</a></li>
+            <li><a href="https://www.imrex.sk/zar-3-14/Polystyrenbeton-spadovanie-plochy" class="footer-link">Polystyrenbeton</a></li>
+            <li><a href="https://www.imrex.sk/zar-3-22/Antiradonova-izolacia-izolacia-proti-radonu" class="footer-link">Antiradónová izolácia</a></li>
+            <li><a href="https://www.imrex.sk/zar-3-15/Doplnkove-sluzby" class="footer-link">Doplnkové služby</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Social -->
+      <div class="col-lg-3 col-md-12">
+        <h5 class="footer-title mb-3">Sledujte nás</h5>
+        <div class="footer-social mb-4">
+          <a href="#" class="footer-social-btn me-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="footer-social-btn me-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="footer-social-btn me-2" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center small text-secondary">
+      Created by &copy; 2025 WebCreative.info
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</body>
+</html>
